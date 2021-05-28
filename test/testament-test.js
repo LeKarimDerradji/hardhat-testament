@@ -58,8 +58,7 @@ describe('Testament', function() {
       await expect(testament.connect(alice).withdraw())
       .to.be.revertedWith('Testament: You do not have any legacy on this contract.')
     });
-    it('Should revert if the owner is not dead yet', async function () {
-      await testament.value()
-    });
+    
   });
+    
 });
